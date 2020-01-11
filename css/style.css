@@ -1,0 +1,44 @@
+body{
+	background-color: grey;
+	text-align: center;
+}
+section{		
+	margin: 20px auto;	
+	width: 100px;	
+}
+
+.cell{
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid black;
+	display: table-cell;
+	cursor: pointer;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;	
+
+}
+
+.blue{
+	color: blue;
+}
+
+.green{
+	color: green;
+}
+
+.status{
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+#restart_btn{
+	width: 30px;
+	height: 20px;
+	border: 1px solid black;
+	margin: 20px auto;
+	cursor: pointer;
+	background-color: white;
+	padding-top: 10px;
+}
