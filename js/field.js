@@ -49,6 +49,11 @@ Field.prototype.checkGame = function (ci,cj){
 	if(ci==cj){
 		this.checkD(cnt);
 	}
+	//если мы на диагонали 2	
+	if(ci==(this.field_width-cj-1)){
+		this.checkD2(cnt);
+	}
+
 	this.checkV(ci,cnt);
 	this.checkH(cj,cnt);
 	this.checkC();	
@@ -63,6 +68,23 @@ Field.prototype.checkD = function(cnt){
 		for(var j=0; j<this.field_height; j++)
 		{			
 			if(i==j)
+			{
+				if(this.field_cells[i][j].content==cnt) line++;				
+			}
+		}
+	
+	if(line==this.field_width)
+		this.sendWin();
+	
+}
+//совпала ли вторая диагональ
+Field.prototype.checkD2 = function(cnt){
+	var line=0;
+
+	for(var i=0; i<this.field_width; i++)			
+		for(var j=0; j<this.field_height; j++)
+		{			
+			if(i==(this.field_width-j-1))
 			{
 				if(this.field_cells[i][j].content==cnt) line++;				
 			}
