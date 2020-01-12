@@ -74,8 +74,6 @@ Game.prototype.endListening = function(){
 var size =3;
 var game = new Game(size,document.getElementById("field"),document.getElementById("status"));		
 
-game.startGame();
-
 function newGame(){			
 	game.newGame();	
 	game.startGame();
