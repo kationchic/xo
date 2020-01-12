@@ -2,9 +2,14 @@ body{
 	background-color: grey;
 	text-align: center;
 }
+
 section{		
 	margin: 20px auto;	
-	width: 100px;	
+	width: 500px;
+}
+
+.field{			
+	margin: 0px auto;	
 }
 
 .cell{
@@ -16,7 +21,7 @@ section{
 	cursor: pointer;
 	text-align: center;
 	font-size: 25px;
-	font-weight: bold;	
+	font-weight: bold;		
 
 }
 

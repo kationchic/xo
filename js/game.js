@@ -71,8 +71,11 @@ Game.prototype.endListening = function(){
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-var size =3;
-var game = new Game(size,document.getElementById("field"),document.getElementById("status"));		
+var size =5;
+var field = document.getElementById("field");
+var game = new Game(size,field,document.getElementById("status"));
+
+field.style.width = (size*30+10)+"px";
 
 function newGame(){			
 	game.newGame();	
